@@ -56,93 +56,169 @@ exports.uiFromJson = function(jsonFile) {
         }
 
         if(jsonObj.type == 'text') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <p style="` + jsonObj.style + `">` + jsonObj.text + `</p>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <p style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</p>`
+                } else {
+                    documentCode = documentCode + `
+        <p onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</p>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <p>` + jsonObj.text + `</p>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <p style="` + jsonObj.style + `">` + jsonObj.text + `</p>`
+                } else {
+                    documentCode = documentCode + `
+        <p>` + jsonObj.text + `</p>`
+                }
             }
         }
 
         if(jsonObj.type == 'h1') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h1 style="` + jsonObj.style + `">` + jsonObj.text + `</h1>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h1 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h1>`
+                } else {
+                    documentCode = documentCode + `
+        <h1 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h1>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h1>` + jsonObj.text + `</h1>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h1 style="` + jsonObj.style + `">` + jsonObj.text + `</h1>`
+                } else {
+                    documentCode = documentCode + `
+        <h1>` + jsonObj.text + `</h1>`
+                }
             }
         }
 
         if(jsonObj.type == 'h2') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h2 style="` + jsonObj.style + `">` + jsonObj.text + `</h2>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h2 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h2>`
+                } else {
+                    documentCode = documentCode + `
+        <h2 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h2>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h2>` + jsonObj.text + `</h2>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h2 style="` + jsonObj.style + `">` + jsonObj.text + `</h2>`
+                } else {
+                    documentCode = documentCode + `
+        <h2>` + jsonObj.text + `</h2>`
+                }
             }
         }
 
         if(jsonObj.type == 'h3') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h3 style="` + jsonObj.style + `">` + jsonObj.text + `</h3>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h3 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h3>`
+                } else {
+                    documentCode = documentCode + `
+        <h3 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h3>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h3>` + jsonObj.text + `</h3>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h3 style="` + jsonObj.style + `">` + jsonObj.text + `</h3>`
+                } else {
+                    documentCode = documentCode + `
+        <h3>` + jsonObj.text + `</h3>`
+                }
             }
         }
 
         if(jsonObj.type == 'h4') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h4 style="` + jsonObj.style + `">` + jsonObj.text + `</h4>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h4 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h4>`
+                } else {
+                    documentCode = documentCode + `
+        <h4 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h4>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h4>` + jsonObj.text + `</h4>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h4 style="` + jsonObj.style + `">` + jsonObj.text + `</h4>`
+                } else {
+                    documentCode = documentCode + `
+        <h4>` + jsonObj.text + `</h4>`
+                }
             }
         }
 
         if(jsonObj.type == 'h5') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h5 style="` + jsonObj.style + `">` + jsonObj.text + `</h5>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h5 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h5>`
+                } else {
+                    documentCode = documentCode + `
+        <h5 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h5>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h5>` + jsonObj.text + `</h5>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h5 style="` + jsonObj.style + `">` + jsonObj.text + `</h5>`
+                } else {
+                    documentCode = documentCode + `
+        <h5>` + jsonObj.text + `</h5>`
+                }
             }
         }
 
         if(jsonObj.type == 'h6') {
-            if(jsonObj.style !== undefined) {
-                documentCode = documentCode + `
-        <h6 style="` + jsonObj.style + `">` + jsonObj.text + `</h6>` 
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h6 style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h6>`
+                } else {
+                    documentCode = documentCode + `
+        <h6 onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</h6>`
+                }
+                
             } else {
-                documentCode = documentCode + `
-        <h6>` + jsonObj.text + `</h6>` 
+                if(jsonObj.style !== undefined) {
+                    documentCode = documentCode + `
+        <h6 style="` + jsonObj.style + `">` + jsonObj.text + `</h6>`
+                } else {
+                    documentCode = documentCode + `
+        <h6>` + jsonObj.text + `</h6>`
+                }
             }
         }
 
         if(jsonObj.type == 'a') {
-            if(jsonObj.style !== undefined) {
-
-                if(jsonObj.href !== undefined) {
+            if(jsonObj.onclick !== undefined) {
+                if(jsonObj.style !== undefined) {
                     documentCode = documentCode + `
-        <a href="` + jsonObj.href + `" style="` + jsonObj.style + `">` + jsonObj.text + `</a>`
+        <a style="` + jsonObj.style + `" onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</a>`
                 } else {
                     documentCode = documentCode + `
-        <a style="` + jsonObj.style + `">` + jsonObj.text + `</a>` 
+        <a onclick="` + jsonObj.onclick + `">` + jsonObj.text + `</a>`
                 }
-
+                
             } else {
-                if(jsonObj.href !== undefined) {
+                if(jsonObj.style !== undefined) {
                     documentCode = documentCode + `
-        <a href="` + jsonObj.href + `">` + jsonObj.text + `</a>`
+        <a style="` + jsonObj.style + `">` + jsonObj.text + `</a>`
                 } else {
                     documentCode = documentCode + `
-        <a>` + jsonObj.text + `</a>` 
+        <a>` + jsonObj.text + `</a>`
                 }
             }
         }

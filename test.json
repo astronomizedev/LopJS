@@ -6,7 +6,20 @@
     "uiObjects": {
         "text": {
             "type": "text",
-            "text": "Hello, World!"
+            "text": "Hello, World!",
+            "onclick": "console.log('Hello!')"
+        },
+
+        "text1": {
+            "type": "a",
+            "text": "Hello, World!",
+            "onclick": "console.log('Hello!')"
+        },
+
+        "text2": {
+            "type": "button",
+            "text": "Hello, World!",
+            "onclick": "console.log('Hello!')"
         }
     }
 }
