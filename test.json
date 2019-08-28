@@ -4,9 +4,9 @@
     },
 
     "uiObjects": {
-        "button": {
-            "type": "button",
-            "text": "button1"
+        "text": {
+            "type": "text",
+            "text": "Hello, World!"
         }
     }
 }
