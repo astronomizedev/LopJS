@@ -1,0 +1,13 @@
+{
+  "name": "lopjs",
+  "version": "1.0.1",
+  "description": "A javascript library for making graphical interfaces.",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "lopjs": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
