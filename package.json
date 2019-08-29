@@ -1,6 +1,6 @@
 {
   "name": "lopjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A javascript library for making graphical interfaces.",
   "main": "index.js",
   "scripts": {},
@@ -9,13 +9,21 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/astronomizedev/LopJS"
   },
   "keywords": [
-    "lop", "js", "html", "json", "translator", "programming",
-    "language", "lopjs"
+    "lop",
+    "js",
+    "html",
+    "json",
+    "translator",
+    "programming",
+    "language",
+    "lopjs"
   ]
 }

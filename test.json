@@ -1,13 +1,24 @@
 {
     "imports": {
-
+        "script": {
+            "type": "javascript",
+            "href": "index.js"
+        }
     },
 
     "uiObjects": {
+        "break": {
+            "type": "br"
+        },
+
         "text": {
             "type": "text",
             "text": "Hello, World!",
             "onclick": "console.log('Hello!')"
+        },
+
+        "break1": {
+            "type": "br"
         },
 
         "text1": {
@@ -16,8 +27,12 @@
             "onclick": "console.log('Hello!')"
         },
 
-        "text2": {
-            "type": "button",
+        "break2": {
+            "type": "br"
+        },
+
+        "button": {
+            "type": "h2",
             "text": "Hello, World!",
             "onclick": "console.log('Hello!')"
         }
