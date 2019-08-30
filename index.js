@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var fs = require('fs'), path = require('path'), chalk = require('chalk')
+var fs = require('fs'), path = require('path')
 
 function createGuiFromJSON(jsonFile) {
     if(jsonFile.constructor === ({}).constructor) {
@@ -14,11 +14,11 @@ if(process.argv[2] != null) {
     
 
     var file = process.argv[2]
-    console.log(chalk.green('Parsing json from \'' + file + '\''))
+    console.log('Parsing json from \'' + file + '\'')
     var json = JSON.parse(fs.readFileSync(path.join((process.argv[1], file))))
 
     fs.writeFileSync(file.replace('.json', '.html'), createGuiFromJSON(json))
-    console.log(chalk.green('Saved to \'' + file.replace('.json', '.html') + '\''))
+    console.log('Saved to \'' + file.replace('.json', '.html') + '\'')
 
-    console.log(chalk.rgb(66, 245, 90)('Completed task successfully.'))
+    console.log('Completed task successfully.')
 }

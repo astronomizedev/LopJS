@@ -1,40 +1,21 @@
 {
     "imports": {
-        "script": {
-            "type": "javascript",
-            "href": "index.js"
+        "style": {
+            "type": "style",
+            "value": "#div { color: red; }",
+            "attributes": {
+
+            }
         }
     },
 
     "uiObjects": {
-        "break": {
-            "type": "br"
-        },
-
-        "text": {
-            "type": "text",
-            "text": "Hello, World!",
-            "onclick": "console.log('Hello!')"
-        },
-
-        "break1": {
-            "type": "br"
-        },
-
-        "text1": {
-            "type": "a",
-            "text": "Hello, World!",
-            "onclick": "console.log('Hello!')"
-        },
-
-        "break2": {
-            "type": "br"
-        },
-
-        "button": {
-            "type": "h2",
-            "text": "Hello, World!",
-            "onclick": "console.log('Hello!')"
+        "div": {
+            "type": "div",
+            "value": "Hello, World!",
+            "attributes": {
+                "id": "div"
+            }
         }
     }
 }
